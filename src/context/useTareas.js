@@ -1,4 +1,10 @@
 import { useContext } from 'react';
 import { TareasContext } from './tareasContextValue';
 
-export const useTareas = () => useContext(TareasContext);
+export const useTareas = () => {
+  const context = useContext(TareasContext);
+  if (!context) {
+    throw new Error('useTareas debe usarse dentro de un TareasProvider');
+  }
+  return context;
+};

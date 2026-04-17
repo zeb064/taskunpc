@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { useTareas } from '../context/TareasContext';
+import { useTareas } from '../context/useTareas';
 
 function NuevaTarea() {
   const { agregarTarea } = useTareas();

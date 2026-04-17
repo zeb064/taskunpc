@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTareas } from '../context/TareasContext';
+import { useTareas } from '../context/useTareas';
 import Header from '../components/Header';
 import ListaTareas from '../components/ListaTareas';
 
